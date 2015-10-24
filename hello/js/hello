@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 
+'use strict'
 
 var out = process.stdout;
 var c = require('skilstak-colors')
+while (true) {
 
-out.write(c.clear + c.rc() + "Hello World!\n");
+  out.write(c.rc() + "Hello World!")
+}
