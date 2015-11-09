@@ -1,11 +1,30 @@
 #!/usr/bin/env python3
 
 import skilstak.colors as c
+def plain(message):
+    print("hello," + message + c.x)
+def print_colored(message):
+    for char in message:
+        print(c.rc() + char + c.x, end="")
 
-try:
-    while True:
-        print(c.rc() + 'Hello ' + c.rc() + 'world' + c.X, end="")
+def colored_hello(message):
+    try:
+        while True:
+            print_colored("Hello" + message)
 
-except KeyboardInterrupt:
-    print(c.cl, end='')
+    except KeyboardInterrupt:
+        print(c.cl, end='')
     
+def hello(message):
+    try:
+        while True:
+            print(c.rc() + 'Hello ' + c.rc() + message + c.X, end="")
+
+    except KeyboardInterrupt:
+        print(c.cl, end='')
+    
+if __name__ == "__main__":
+    import sys
+    who="world"
+    message=""
+    option=""
