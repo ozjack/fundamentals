@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+import skilstak.colors as c
+
+def print_hello():
+     helliprint(c.rc() + 'Hello World!')
+
+def print_death_by_beheading():
+    while True:
+        print('Hello World!', end='')
+
+if __name__ == '__main__':
+    print_hello()
+    print_death_by_beheading()

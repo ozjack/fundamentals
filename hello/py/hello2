@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+import skilstak.colors as c
+
+def The_Dark_Ages():
+    print(c.red + 'Your soul will go to the orcs of the East, your memories will go to the goblins of the South, and your body will go as food to the trolls of the North. Say hello to your nightmares.' + c.reset)
+
+def The_Dark_Side_Shall_Rise_And_Destroy_The_Jedi():
+    print(c.red + "hello nightmares" + c.reset)
+
+if __name__ == '__main__':
+    The_Dark_Ages()
+    The_Dark_Side_Shall_Rise_And_Destroy_The_Jedi()
